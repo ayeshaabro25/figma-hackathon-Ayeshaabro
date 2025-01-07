@@ -1,0 +1,92 @@
+/* Container for the breadcrumb and title */
+.breadcrumbContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: #fff; /* White background */
+  border-bottom: 1px solid #eaeaea; /* Subtle border for separation */
+}
+
+/* Title styling */
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1e1e1e; /* Dark gray color */
+  margin: 0;
+}
+
+/* Breadcrumb styling */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #888; /* Light gray for breadcrumb text */
+}
+
+/* Link styling */
+.link {
+  text-decoration: none;
+  color: #1e1e1e; /* Darker gray for links */
+  font-weight: bold;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Separator styling */
+.separator {
+  margin: 0 8px;
+  color: #c4c4c4; /* Gray for the arrow separator */
+}
+
+/* Current page styling */
+.current {
+  color: #888; /* Lighter gray for current page text */
+}
+
+/* Mobile and tablet responsiveness */
+@media (max-width: 768px) {
+  .breadcrumbContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 20px;
+  }
+
+  .title {
+    font-size: 1.5rem; /* Smaller title font for mobile */
+  }
+
+  .breadcrumb {
+    flex-direction: column;
+    font-size: 0.9rem; /* Slightly smaller breadcrumb text */
+    align-items: flex-start;
+  }
+
+  .separator {
+    margin: 4px 0;
+  }
+
+  .link {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .breadcrumbContainer {
+    padding: 8px 15px;
+  }
+
+  .title {
+    font-size: 1.25rem; /* Even smaller title font for very small screens */
+  }
+
+  .breadcrumb {
+    font-size: 0.85rem;
+  }
+
+  .link {
+    font-size: 0.85rem;
+  }
+}

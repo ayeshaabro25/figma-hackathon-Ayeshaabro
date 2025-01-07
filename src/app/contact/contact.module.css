@@ -1,0 +1,64 @@
+/* Contact Page Container */
+.contactContainer {
+  padding: 32px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Title Styling */
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+  text-align: center;
+  color: #1e1e1e;
+}
+
+/* Contact Information Section */
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.infoItem h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #1e1e1e;
+  margin-bottom: 8px;
+}
+
+.infoItem p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Follow Us Section */
+.followUs {
+  text-align: center;
+}
+
+.followUs h3 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  color: #1e1e1e;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.socialIcon {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #1e90ff;
+}
+
+.socialIcon:hover {
+  text-decoration: underline;
+}
