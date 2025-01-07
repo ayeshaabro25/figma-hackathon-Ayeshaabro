@@ -1,0 +1,29 @@
+/* About Page Container */
+.aboutContainer {
+  padding: 32px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Title Styling */
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+  text-align: center;
+  color: #1e1e1e;
+}
+
+/* Content Section */
+.aboutContent {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 32px;
+}
+
+.aboutContent p {
+  margin-bottom: 20px;
+}

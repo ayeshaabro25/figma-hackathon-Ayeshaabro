@@ -1,0 +1,138 @@
+/* Navbar container */
+.navbar {
+  position: relative;
+  background-color: #fff;
+  padding: 16px;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap; /* Allow the navbar to wrap on small screens */
+}
+
+/* Dropdown toggle button */
+.dropdownToggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #000;
+  display: none; /* Hide on larger screens */
+}
+
+/* Dropdown menu */
+.dropdownMenu {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 16px;
+  z-index: 1000;
+  width: 200px;
+}
+
+/* Navigation links */
+.navLinks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navLinks li {
+  margin: 0 16px;
+  font-size: 1rem;
+}
+
+.navLinks li a {
+  text-decoration: none;
+  color: #444;
+}
+
+.navLinks li a:hover {
+  color: #000;
+}
+
+/* Action buttons */
+.actions {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.actionLink {
+  display: block;
+  margin: 0 8px;
+  font-size: 1rem;
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+.actionLink:hover {
+  color: #0047ab;
+}
+
+.icon {
+  font-size: 1.2rem;
+  margin: 0 8px;
+  display: flex;
+  align-items: center;
+  color: #444;
+  text-decoration: none;
+}
+
+.icon:hover {
+  color: #000;
+}
+
+/* Badge for cart and wishlist */
+.badge {
+  background-color: #ff0000;
+  color: #fff;
+  font-size: 0.8rem;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 4px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  /* Make the navigation links stack vertically on smaller screens */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Show dropdown toggle on small screens */
+  .dropdownToggle {
+    display: block;
+  }
+
+  /* Hide the dropdown menu by default */
+  .dropdownMenu {
+    display: none;
+  }
+
+  /* Show dropdown menu when toggled */
+  .dropdownMenu.open {
+    display: block;
+  }
+
+  /* Stack action icons vertically */
+  .actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .icon, .actionLink {
+    margin-bottom: 8px;
+  }
+}
